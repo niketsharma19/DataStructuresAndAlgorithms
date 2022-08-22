@@ -9,7 +9,6 @@ public class KthSmallest {
 
 	public static int kthSmallest(int[][] matrix, int k) {
 		int len = matrix.length;
-//		List<Integer> list = new ArrayList<>();
 		int[] arr = new int[len];
 		for (int i = 0; i < len * len; i++) {
 			int small = Integer.MAX_VALUE;
