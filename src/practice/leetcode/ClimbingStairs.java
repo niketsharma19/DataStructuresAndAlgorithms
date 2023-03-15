@@ -6,13 +6,13 @@ import java.util.Map;
 public class ClimbingStairs {
 
 	public static void main(String[] args) {
-		int n= 100;
+		int n= 50;
 		Long start = System.nanoTime();
 		System.out.println(climbStairs(n));
-		System.out.println("Without Dynamic Programming : " + (System.nanoTime() - start) / 1000000);
+		System.out.println("Without Dynamic Programming : " + (System.nanoTime() - start) / 1000);
 		start = System.nanoTime();
 		System.out.println(climbStairsUsingHashMap(n));
-		System.out.println("With Dynamic Programming : " + (System.nanoTime() - start) / 1000000);
+		System.out.println("With Dynamic Programming : " + (System.nanoTime() - start) / 1000);
 	}
 
 	private static int climbStairs(int n) {
