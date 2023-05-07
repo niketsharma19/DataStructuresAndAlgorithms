@@ -9,10 +9,10 @@ public class BinaryTreeLevelOrderTraversal {
 
 	public static void main(String[] args) {
 		TreeNode root = new TreeNode(3, new TreeNode(9), new TreeNode(20, new TreeNode(15), new TreeNode(7)));
-		System.out.println(levelOrder(root));
+		System.out.println(levelOrderTravesal(root));
 	}
 
-	private static List<List<Integer>> levelOrder(TreeNode root) {
+	public static List<List<Integer>> levelOrderTravesal(TreeNode root) {
 		List<List<Integer>> list = new ArrayList<>();
 		traverse(root, list, -1);
 		return list;
