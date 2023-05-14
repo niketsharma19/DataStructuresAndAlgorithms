@@ -7,8 +7,10 @@ import practice.tree.util.TreeNode;
 
 public class BinaryTreeLevelOrderTraversal {
 
+	// Example of BFS
 	public static void main(String[] args) {
-		TreeNode root = new TreeNode(3, new TreeNode(9), new TreeNode(20, new TreeNode(15), new TreeNode(7)));
+		TreeNode root = new TreeNode(3, new TreeNode(9, new TreeNode(10), null),
+				new TreeNode(20, new TreeNode(15), new TreeNode(7)));
 		System.out.println(levelOrderTravesal(root));
 	}
 
