@@ -15,6 +15,24 @@ class BinaryTreeRightSideView {
 	}
 
 	private static List<Integer> rightSideView(TreeNode root) {
+		List<Integer> list = new ArrayList<>();
+		traverse(root, list, -1);
+		return list;
+	}
+
+	private static void traverse(TreeNode node, List<Integer> list, int level) {
+		level++;
+		if (node == null) {
+			return;
+		}
+		if (list.size() <= level) {
+			list.add(node.val);
+		}
+		traverse(node.right, list, level);
+		traverse(node.left, list, level);
+	}
+
+	private static List<Integer> rightSideViewTraverseAllNodes(TreeNode root) {
 		List<List<Integer>> list = new ArrayList<>();
 		if (root == null) {
 			return new ArrayList<>();
