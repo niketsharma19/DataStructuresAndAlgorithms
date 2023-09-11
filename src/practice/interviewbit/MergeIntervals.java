@@ -6,6 +6,8 @@ import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
 
+import practice.interviewbit.util.Interval;
+
 public class MergeIntervals {
 
 	public static void main(String[] args) {
@@ -70,27 +72,6 @@ public class MergeIntervals {
 			ans.add(overlap);
 		}
 		System.out.println(ans);
-	}
-
-	public static class Interval {
-		int start;
-		int end;
-
-		Interval() {
-			start = 0;
-			end = 0;
-		}
-
-		Interval(int s, int e) {
-			start = s;
-			end = e;
-		}
-
-		@Override
-		public String toString() {
-			return "[" + start + ", " + end + "]";
-		}
-
 	}
 
 }
