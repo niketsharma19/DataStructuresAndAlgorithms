@@ -1,4 +1,4 @@
-package practice.interviewbit;
+package practice.interviewbit.arrays;
 import java.math.BigInteger;
 
 public class LargeFactorial {
